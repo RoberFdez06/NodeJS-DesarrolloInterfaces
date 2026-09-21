@@ -4,7 +4,7 @@
     "slug": "InstalacionNodeJS",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/expo.icon/Assets/LogoSpiderman.jpg",
     "scheme": "instalacionnodejs",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -21,7 +21,7 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/expo.icon/Assets/LogoSpiderman.jpg"
     },
     "plugins": [
       "expo-router",
