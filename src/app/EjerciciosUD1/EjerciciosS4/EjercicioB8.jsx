@@ -19,6 +19,6 @@ export default function App() {
         </View>
     );
 }
-//Primer error: Too many re-renders ocurre porque al boton le pasamos la funcion agregar con los () o lo que es lo mismo por referencia. Se arregla quitando los parentesis.
-//Segundo error: Se estaba creado sin ... y registraba la posicion anterior de la memoria
+//Primer error: Too many re-renders ocurre porque al boton le pasamos la funcion agregar con los () o lo que es lo mismo por valor. Se arregla quitando los parentesis.
+//Segundo error: No se puede hacer un push a una variable de estado.
 //Tercer error: En la lista no esta la propiedad key
