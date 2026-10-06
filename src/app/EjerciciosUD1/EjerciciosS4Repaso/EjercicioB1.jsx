@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { Button, Text, View } from "react-native";
 
-let likes = 0;
-
-
 export default function App() {
 
     const [likes, setLikes] = useState(0);
