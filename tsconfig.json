@@ -16,5 +16,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "src/app/EjerciciosUD1/EjerciciosS4/EjercicioB6.jsx", "src/app/EjerciciosUD1/EjerciciosS4/EjercicioB8.jsx", "src/app/EjerciciosUD1/EjerciciosS4Repaso/EjercicioB3.jsx", "src/app/Sesion4.jsx"  ]
+, "src/app/EjerciciosUD1/EjerciciosS4/EjercicioB6.jsx", "src/app/EjerciciosUD1/EjerciciosS4/EjercicioB8.jsx", "src/app/EjerciciosUD1/EjerciciosS4Repaso/EjercicioB3.jsx", "src/app/Sesion4.jsx", "src/app/index.jsx"  ]
 }
