@@ -1,6 +1,6 @@
+import { Link, router } from "expo-router";
 import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { Link } from "expo-router";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const librosIniciales = [
   { id: "1", titulo: "Cien años de soledad", autor: "Gabriel García Márquez" },
@@ -13,13 +13,18 @@ export default function Inicio() {
   return (
     <View style={styles.pantalla}>
 
-    <Link href="/ayuda" style={{ color: "#2563EB", padding: 8 }}>
-      Acerca de
-    </Link>
+      <Link href="/ayuda" style={{ color: "#2563EB", padding: 8 }}>
+        Acerca de
+      </Link>
 
       {libros.map((l) => (
         <View key={l.id} style={styles.fila}>
-          <Text style={styles.titulo}>{l.titulo}</Text>
+          <Pressable onPress={() => router.push({
+            pathname: "/libro/[id]",
+            params: { id: l.id, titulo: l.titulo, autor: l.autor }
+          })}>
+            <Text style={styles.titulo}>{l.titulo}</Text>
+          </Pressable>
         </View>
       ))}
     </View>
