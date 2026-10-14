@@ -1,0 +1,25 @@
+Ejercicio de papel, sin proyecto. Tienes una app de biblioteca con tres pantallas: Inicio (la lista), Libro (la
+ficha de un libro) y Autor (la ficha del autor). Recuerda la pila de Java: push añade encima, el atrás quita la
+de arriba.
+Estas son las acciones, en orden. Empiezas con la app recién abierta:
+
+
+1. Abres la app.
+2. Pulsas el libro «1984» (se abre su ficha).
+3. En la ficha pulsas «Ver autor».
+4. Pulsas atrás.
+5. Pulsas atrás.
+6. Pulsas atrás otra vez.
+
+
+Se pide: escribe la pila tras cada acción, con la pantalla de abajo a la izquierda y la visible a la derecha (por
+ejemplo Inicio > Libro). Después responde:
+
+• Tras la acción 4, ¿qué pantalla se ve y cuáles siguen "vivas"?
+Veo la ficha del libro 1984. Sigue vivas el index de la app.
+
+• Tras la acción 5, ¿la lista de libros se ha perdido o sigue como estaba?
+Justo en la acción 5 se quedatía en el index de la app. sigue como estaba.
+
+• ¿Qué crees que pasa en la acción 6? ¿Qué pantalla había debajo?
+Se quedaría el index de la app.

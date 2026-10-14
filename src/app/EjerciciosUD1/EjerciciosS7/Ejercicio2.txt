@@ -1,0 +1,24 @@
+Ejercicio de papel, sin proyecto. Recuerda: cada archivo dentro de app/ es una pantalla y su ruta sale del
+nombre del archivo.
+
+a) Escribe la ruta de cada archivo (si no es una pantalla, dilo). En los que tienen corchetes, pon un ejemplo
+con un valor cualquiera:
+
+1. app/index.js /
+2. app/acerca.js /acerca
+
+UD1 · S7 · Boletín de ejercicios · página 2
+
+3. app/usuario/[id].js /usuario/pepe
+4. app/perfil/editar.js /perfil/editar
+5. app/_layout.js /_layout (no es una pantalla)
+6. app/ajustes/index.js /ajustes/index (no es una pantalla)
+
+b) Escribe qué archivo hace falta crear para que existan estas rutas:
+1. /contacto /app
+2. /producto/15 (y también /producto/99, con el mismo archivo) /app/productos/[id].js
+3. Extra: /libro/7/resenas /app/libros/[id].js
+
+c) Un compañero tiene el archivo app/acerca.js pero escribe <Link href="/Acerca"> con la A
+mayúscula. ¿Qué crees que verá al pulsarlo?
+No lo vera, ya que no se dirigira a la página adecuada.
