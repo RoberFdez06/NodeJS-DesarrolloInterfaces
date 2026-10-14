@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const librosIniciales = [
-  { id: "1", titulo: "Cien años de soledad", autor: "Gabriel García Márquez" },
-  { id: "2", titulo: "1984", autor: "George Orwell" },
-  { id: "3", titulo: "El Hobbit", autor: "J.R.R. Tolkien" },
+  { id: "1", titulo: "Cien años de soledad", autor: "Gabriel García Márquez", leido: true },
+  { id: "2", titulo: "1984", autor: "George Orwell", leido: false },
+  { id: "3", titulo: "El Hobbit", autor: "J.R.R. Tolkien", leido: false },
 ];
 
 export default function Inicio() {
@@ -24,6 +24,7 @@ export default function Inicio() {
             params: { id: l.id, titulo: l.titulo, autor: l.autor }
           })}>
             <Text style={styles.titulo}>{l.titulo}</Text>
+
           </Pressable>
         </View>
       ))}
