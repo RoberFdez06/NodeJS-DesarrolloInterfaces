@@ -1,5 +1,5 @@
-import { useLocalSearchParams } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { router, useLocalSearchParams } from "expo-router";
+import { StyleSheet, Text, View, Pressable } from "react-native";
 
 export default function DetalleLibro() {
 
@@ -9,7 +9,10 @@ export default function DetalleLibro() {
     return (
         <View style={styles.contenedor}>
             <Text style={styles.titulo}>Título: {titulo}</Text>
-            <Text>Autor: {autor}</Text>
+            <Pressable onPress={() => router.push({pathname: "/autor/[nombre]", params:{autor}})}>
+                <Text>Autor: {autor}</Text>
+            </Pressable>
+            
             <Text style={styles.id}>Identificador: {id}</Text>
             <Text>Leido: {esLeido ? "Sí" : "No"}</Text>
         </View>
