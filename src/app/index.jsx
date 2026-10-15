@@ -21,7 +21,7 @@ export default function Inicio() {
         <View key={l.id} style={styles.fila}>
           <Pressable onPress={() => router.push({
             pathname: "/libro/[id]",
-            params: { id: l.id, titulo: l.titulo, autor: l.autor }
+            params: { id: l.id, titulo: l.titulo, autor: l.autor, leido: l.leido }
           })}>
             <Text style={styles.titulo}>{l.titulo}</Text>
 
